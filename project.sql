@@ -64,7 +64,7 @@ CREATE TABLE Employee(
   salary	number(10,2),
   jobTitle	varchar(16),
   dID		number(7),
-  CONSTRAINT eIC3 CHECK(NOT(jobTitle != 'manager' AND salary < 70000))
+  CONSTRAINT eIC3 CHECK(NOT(jobTitle = 'manager' AND salary < 70000))
 );
 --
 CREATE TABLE Car_List(
